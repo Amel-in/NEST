@@ -1,0 +1,545 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 100px;          
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.my-navbar {
+  position: fixed;             
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;               
+  background-color: #85aabd;  
+  padding: 0.5rem 1rem;
+}
+
+.my-navbar .navbar-brand img {
+  max-height: 90px;
+}
+
+.my-navbar .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.my-navbar .nav-link:hover,
+.my-navbar .nav-link:focus {
+  color: #ffc107 !important;  
+}
+
+.carousel-item img {
+  height: 380px;               
+  object-fit: cover;          
+}
+
+.home-carousel {
+  margin-top: 30px;   
+}
+
+.row.row-cols-md-5 {
+  margin-top: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.row.row-cols-md-5 .card {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.row.row-cols-md-5 .card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+.cloud-hero-wrapper {
+  max-width: 1200px;
+  margin: 1.5rem auto 2rem;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cloud-hero-img {
+  flex: 0 0 40%;         
+  max-width: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.cloud-hero-text {
+  flex: 1;
+}
+
+.cloud-hero-text h3 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cloud-hero-text p {
+  margin-bottom: 0;
+  font-size: 1.05rem;
+}
+
+.cloud-main-desc {
+  max-width: 1200px;
+  margin: 2rem auto 1rem;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cloud-offerings-title {
+  max-width: 1200px;
+  margin: 2rem auto 1rem;
+  padding: 0 1.5rem;
+}
+
+.cloud-offerings-row {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+}
+
+.cloud-offerings-row .card {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.cloud-offerings-row .card-img-top {
+  height: 170px;
+  object-fit: cover;
+}
+
+.cyber-hero-wrapper {
+  max-width: 1200px;
+  margin: 1.5rem auto 2rem;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cyber-hero-img {
+  flex: 0 0 40%;         
+  max-width: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.cyber-hero-text {
+  flex: 1;
+}
+
+.cyber-hero-text h3 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cyber-hero-text p {
+  margin-bottom: 0;
+  font-size: 1.05rem;
+}
+
+.cyber-main-desc {
+  max-width: 1200px;
+  margin: 2rem auto 1rem;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cyber-offerings-title {
+  max-width: 1200px;
+  margin: 2rem auto 1rem;
+  padding: 0 1.5rem;
+}
+
+.cyber-offerings-row {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+}
+
+.cyber-offerings-row .card {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.cyber-offerings-row .card-img-top {
+  height: 170px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 230px;
+  }
+
+  .cyber-hero-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cyber-hero-img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.data-hero-wrapper {
+  max-width: 1200px;
+  margin: 1.5rem auto 2rem;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.data-hero-img {
+  flex: 0 0 40%;         
+  max-width: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.data-hero-text {
+  flex: 1;
+}
+
+.data-hero-text h3 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.data-hero-text p {
+  margin-bottom: 0;
+  font-size: 1.05rem;
+}
+
+.data-main-desc {
+  max-width: 1200px;
+  margin: 2rem auto 1rem;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.data-offerings-title {
+  max-width: 1200px;
+  margin: 2rem auto 1rem;
+  padding: 0 1.5rem;
+}
+
+.data-offerings-row {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+}
+
+.data-offerings-row .card {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.data-offerings-row .card-img-top {
+  height: 170px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 230px;
+  }
+
+  .data-hero-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .data-hero-img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.dev-hero-wrapper {
+  max-width: 1200px;
+  margin: 1.5rem auto 2rem;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.dev-hero-img {
+  flex: 0 0 40%;         
+  max-width: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.dev-hero-text {
+  flex: 1;
+}
+
+.dev-hero-text h3 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.dev-hero-text p {
+  margin-bottom: 0;
+  font-size: 1.05rem;
+}
+
+.dev-main-desc {
+  max-width: 1200px;
+  margin: 2rem auto 1rem;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.dev-offerings-title {
+  max-width: 1200px;
+  margin: 2rem auto 1rem;
+  padding: 0 1.5rem;
+}
+
+.dev-offerings-row {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+}
+
+.dev-offerings-row .card {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.dev-offerings-row .card-img-top {
+  height: 170px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 230px;
+  }
+
+  .dev-hero-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dev-hero-img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.gis-hero-wrapper {
+  max-width: 1200px;
+  margin: 1.5rem auto 2rem;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.gis-hero-img {
+  flex: 0 0 40%;        
+  max-width: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.gis-hero-text {
+  flex: 1;
+}
+
+.gis-hero-text h3 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.gis-hero-text p {
+  margin-bottom: 0;
+  font-size: 1.05rem;
+}
+
+.gis-main-desc {
+  max-width: 1200px;
+  margin: 2rem auto 1rem;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.gis-offerings-title {
+  max-width: 1200px;
+  margin: 2rem auto 1rem;
+  padding: 0 1.5rem;
+}
+
+.gis-offerings-row {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+}
+
+.gis-offerings-row .card {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.gis-offerings-row .card-img-top {
+  height: 170px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 230px;
+  }
+
+  .gis-hero-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .gis-hero-img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.contact-wrapper {
+  max-width: 1200px;
+  margin: 1.5rem auto 3rem;   
+  padding: 0 1.5rem;
+}
+
+.nav-space {
+  height: 130px;                
+}
+
+.contact-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.contact-subtitle {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info,
+.contact-hours {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-card {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  background-color: #ffffff;
+}
+
+.map-box {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  margin-top: 1rem;
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    margin: 1rem auto 2rem;
+    padding: 0 1rem;
+  }
+
+  .map-box {
+    height: 280px;
+  }
+}
+
+.site-footer {
+  background-color: #0b2c3d;
+  color: #ffffff;
+  padding: 40px 0 20px;
+  margin-top: 40px;
+}
+
+.site-footer h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.site-footer p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #e0e0e0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+.site-footer hr {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin: 20px 0 10px;
+}
+
+.site-footer .copyright p {
+  font-size: 13px;
+  color: #cccccc;
+  margin: 0;
+}
